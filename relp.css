@@ -1,0 +1,709 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background: #f4f4f4;
+}
+/* Global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* dropdown with all properties */
+/* branding */
+header #branding {
+    margin-top: 18px;
+    border: 2px solid rgb(0, 0, 0);
+  
+}
+header #branding h1{
+    font-size: 16px;
+   text-align: center;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header #branding a{
+    font-size: 16px;
+   text-align: center;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+   
+}
+.dropdown .drpbtn{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    outline: none;
+    color: #383838;
+    padding: 20px 10px 20px 20px;
+    background-color: inherit;
+  
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.drpcontent{
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #000;
+}
+.drpcontent .header{
+    background: #eee;
+    padding: 16px;
+    color: #1b1b1b;
+}
+.drpcontent .header h1{
+    color: #424141;
+    
+   
+}
+ .col h2{
+    color: #424141;
+   padding-left: 20px;
+    font-size: 18px;
+   
+}
+.drpcontent .header button{
+    float: right;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+.dropdown:hover .drpcontent{
+    display: block;
+}
+.ro{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 25%;
+    max-width: 25%;
+   
+}
+.col a{
+    float: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 0 10px 46px;
+}
+/* Navigations Properties */
+
+header{
+    background: #ffffff;
+    min-height: 40px;
+    color: #424141;
+    border-bottom: 1px solid #ddd;
+  
+}
+header a{
+   text-decoration: none;
+   color: #383838;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    display: inline;
+    float: left;
+    padding: 0 0 0 25px ;
+}
+
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 20px;
+    margin-right: 0;
+  
+}
+.risu{
+    background: steelblue;
+   border: 1px solid steelblue;
+   border-radius: 3px;
+    padding: 2px 10px 2px 10px;
+    color: white;
+}
+.rili{
+    background: transparent;
+   border: 1.5px solid #111;
+   border-radius: 3px;
+    padding: 2px 10px 2px 10px;
+    color: #383838;
+}
+/* Responsive Menu */
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+  }
+  
+  .navbar a {
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    color: white;
+  }
+  
+  .navbar a:hover {
+    color: #443030;
+  }
+  
+  .navbar .closebtn {
+   font-size: 35px;
+   color: goldenrod;
+   margin-right: 25px;
+   position: absolute;
+   top: 0;
+   right: 0;
+  }
+  
+  
+.openbtn{
+    position: absolute;
+    right: 5px;
+    top: -0.5%;
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+}
+/* home page properties */
+#home{
+    background: url(workbench.jpg) no-repeat;
+    min-height: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#home .homeco {  
+   text-align: center;
+   margin-top: 180px;
+   background: rgba(0,0,0,0.5);
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+  padding-bottom: 15px;
+}
+#home .homeco p{
+    color: #eeeeee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+   
+    margin: 10px;
+}
+#home .homeco q{
+    color: #ddd7d7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    
+  
+}
+#home .homeco h1{
+    color: #e4e4e4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-transform: uppercase;
+   
+    margin: 10px;
+ 
+}
+#home .homeco a{
+    text-decoration: none;
+    background: steelblue;
+    font-size: 15px;
+    padding: 9px 15px;
+    color: #ffffff;
+   text-align: center;
+   border-radius: 5px;
+}
+/* schools & patternship section */
+#schools{
+    min-height: 200px;
+    
+}
+
+/* courses section properties*/
+#courses{
+    background-color: #ffffff;
+}
+
+
+
+aside form{
+  float: right;
+  width: 40%;
+  padding-top: 20px;
+}
+  #sidebar input{
+     width: 90%;
+     background-color: transparent;
+     border: transparent;
+     border-bottom: 2px solid #111;
+     font-size: 24px;
+    
+ }
+ #sidebar label{
+     font-size: 14px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+ }
+ #sidebar h1{
+     font-size: 24px;
+     color: #424141;
+     text-transform: uppercase;
+    text-align: center;
+ }
+ #sidebar button a{
+     color: #111;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+ }
+ #sidebar button{
+    border: 2px solid cornflowerblue;
+    background-color: cornflowerblue;
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 30px;
+ }
+ #sidebar p{
+     text-transform: capitalize;
+     font-size: 18px;
+     text-align: center;
+     padding-top: 5px;
+     color: #424141;
+ }
+ /* time section with its all properties */
+ #time .intro h1{
+     text-align: center;
+     text-transform: capitalize;
+     color: #424141;
+
+ }
+ #time .intro p{
+     text-align: center;
+     text-transform: capitalize;
+     color: #424141;
+ }
+ .row{
+     display: flex;
+     flex-wrap: wrap;
+     
+ }
+ .column{
+     flex: 25%;
+     max-width: 25%;
+     
+ }
+ #time .tab1, .tab2, .tab3, .tab4{
+     background: #ffffff;
+     height: 250px;
+     
+ }
+ #time .tab1{
+     border-top: 5px solid skyblue;
+     border-left: 8px solid #f4f4f4;
+     border-top-right-radius: 7px;
+ }
+ #time .tab2{
+    border-top: 5px solid maroon;
+    border-left: 8px solid #f4f4f4;
+    border-top-right-radius: 7px;
+}
+#time .tab3{
+    border-top: 5px solid orangered;
+    border-left: 8px solid #f4f4f4;
+    border-top-right-radius: 7px;
+}
+#time .tab4{
+    border-top: 5px solid teal;
+    border-left: 8px solid #f4f4f4;
+    border-top-right-radius: 7px;
+}
+#time h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #424141;
+}
+#time p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #424141;
+}
+/* subscribtion section and its properties */
+#subscribe {
+    background: #ffffff;
+    border-top: 10px solid #f4f4f4;
+}
+#subscribe .newsletter {
+    float: left;
+    width: 60%;
+    padding-top: 30px;
+}
+#subscribe .newsletter h1{
+    text-transform: uppercase;
+    color: #424141;
+   
+}
+#subscribe .newsletter p{
+    text-transform: capitalize;
+    color: #424141;
+}
+
+#subscribe .newsletter input{
+    padding: 4px ;
+    height: 25px;
+    width: 60%;
+    display: inline-block;
+}
+.newsletter input:focus{
+    outline: none;
+}
+#subscribe .newsletter button{
+    padding: 10px;
+    width: 150px;
+    background: darkorange;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+}
+#subscribe .choose {
+    float: right;
+    width: 40%;
+  
+    
+}
+#subscribe .choose h1{
+    text-transform: uppercase;
+    color: #424141;
+    padding-bottom: 10px;
+}
+.one{
+    background: darkorange;
+    float: left;
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.two{
+    background: seagreen;
+   float: left;
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fdfdfd;
+    font-weight: bold;
+}
+.three{
+    background: dodgerblue;
+   float: left;
+    width: 50px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+#subscribe .choose h2{
+    text-transform: uppercase;
+    padding-left: 80px;
+    color: #424141;
+  
+}
+#subscribe .choose p{
+    text-transform: capitalize;
+    padding-left: 80px;
+    color: #424141;
+}
+/* footer with all its properties */
+footer{
+    background: #111;
+   
+}
+footer .rows{
+    display: flex;
+    flex-wrap: wrap
+}
+footer .cols{
+    flex: 25%;
+    max-width: 25%;
+   
+}
+footer .cols a{
+    float: none;
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;  
+}
+footer .cols h1{
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 25px;
+}
+
+footer #branding a{
+    text-decoration: none;
+    font-size: 26px;
+   text-align: center;
+    color: #ccc;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid rgb(70, 70, 70);
+}
+footer .copyright {
+    color: #ccc;
+    font-size: 16px;
+    text-align: center;
+}
+/* signup foarm and its all properties*/
+#signup h1{
+    text-transform: uppercase;
+    color: #424141;
+    text-align: center;
+ 
+}
+#signup p{
+    text-transform: capitalize;
+    color: #424141;
+    text-align: center;
+   
+}
+.signimg{
+    float: left;
+    padding-top: 30px;
+    width: 53%;
+    padding-bottom: 50px;
+}
+.signimg img{
+    border-radius: 10px;
+    width: 95%;
+}
+#signup .signimg p{
+    text-transform: capitalize;
+    color: #424141;
+    float: left;
+}
+.signup{
+   float: right;
+   width: 40%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.signup input[type="text"], input[type="tel"], input[type="email"], input[type="password"]{
+    width: 70%;
+    padding: 4px ;
+    height: 20px;
+    display: inline-block;
+}
+.signup input[type="text"], input[type="tel"],  input[type="password"], input[type="email"]:focus{
+   outline: none;
+  
+}
+.signup button{
+    padding: 10px 20px;
+    background: chocolate;
+    border-radius: 5px;
+    border: none;
+   margin-left: 70px;
+   width: 50%;
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .col{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .navbar{
+        display: block;
+    }
+    .openbtn{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .dropdown .drpbtn{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        padding: 20px 36px;
+        background-color: inherit;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+    .drpcontent .header button{
+        float: right;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+    }
+    #home .homeco{
+       width: 100%;
+       margin-left: 0;
+       margin-top: 80px;
+    }
+    #home .homeco h1{
+        font-size: 25px;
+    }
+    #courses .rou{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #courses .cola{
+        flex: 50%;
+        max-width: 50%;
+    }
+    aside form{
+    
+        float: none;
+        width: 90%;
+      
+        
+       }
+       #sidebar button{
+           width: 90%;
+           margin: auto;
+       }
+       .row{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .column{
+        flex: 100%;
+        max-width: 100%;
+       
+    }
+    #time .tab1{
+      border-left: 1px solid #f4f4f4;
+        
+    }
+    #time .tab2{
+        border-left: 1px solid #f4f4f4;
+          
+      }
+    #time .tab3{
+        border-left: 1px solid #f4f4f4;
+          
+      }
+    #time .tab4{
+        border-left: 1px solid #f4f4f4;
+          
+      }
+    #subscribe .choose {
+        float: none;
+        width: 100%;
+    }
+    #subscribe .newsletter {
+        float: none;
+        width: 100%;
+        
+    }
+    #subscribe .newsletter button{
+        padding: 10px;
+        width: 100%;
+        background: darkorange;
+        border: 2px solid darkorange;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    #subscribe .newsletter input{
+       
+        width: 90%;
+        
+    }
+    footer .cols{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .signup{
+        margin: 50px 0 0 0;
+     }
+     .signup{
+        float: none;
+        width: 100%;
+        padding-top: 0;
+     }
+     
+     .signup input[type="text"], input[type="tel"], input[type="email"]{
+        width: 90%;
+       
+    }
+    .signup input[type="password"] {
+        width: 90%;
+        height: 20px;
+    }
+    .signup button{
+       width: 90%;
+       margin: 0;
+    }
+    
+    .signimg{
+        float: none;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .signimg img{
+        border-radius: 10px;
+        width: 100%;
+    }
+    .signimg p{
+        text-transform: capitalize;
+        color: #424141;
+    }
+}
